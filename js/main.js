@@ -65,8 +65,9 @@ $(document).ready(function() {
 $('.owl-mainTop').owlCarousel({
         loop: true,
         margin: 10,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa  fa-chevron-right"></i>'],
+        navText: ['', ''],
         responsiveClass: true,
+        dots: false,
         responsive: {
             0: {
                 items: 1,
