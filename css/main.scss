@@ -12,15 +12,22 @@ li {
     list-style-type: none;
 }
 
+@font-face {
+    font-family: Narziss;
+    src: url("../font/VNF-Narziss_Regular.ttf");
+}
+
 h1,
 h2,
 h3,
 h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: Narziss;
+    font-weight: 700;
 }
 
 a {
     text-decoration: none;
+    outline: none;
     &:hover,
     &:focus {
         text-decoration: none !important;
@@ -28,7 +35,7 @@ a {
 }
 
 @mixin font {
-    font-family: 'Playfair Display', serif;
+    font-family: Narziss;
 }
 
 .affix {
@@ -279,16 +286,20 @@ header {
         .mainTop-owl {
             .owl-mainTop {
                 .item {
-                    img {
-                        width: 250px;
-                        height: 250px;
-                        border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        -webkit-border-radius: 50%;
-                        display: table;
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-top: 20px;
+                    a {
+                        outline: none !important;
+                        img {
+                            width: 250px;
+                            height: 250px;
+                            border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            display: table;
+                            margin-left: auto;
+                            margin-right: auto;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
                     }
                 }
             }
@@ -344,6 +355,7 @@ header {
             }
             p {
                 font-weight: 700;
+                text-align: center;
             }
             ul {
                 margin-left: -30px;
@@ -355,11 +367,14 @@ header {
             }
             .mainBetween-2__img {
                 .mainBetween-2__link {
-                    height: 200px;
-                    margin-bottom: 50px;
-                    img {
-                        height: 100%;
-                        width: auto;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    a {
+                        outline: none !important;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
                     }
                     p {
                         text-align: center;
@@ -383,8 +398,11 @@ header {
                 .images-link {
                     width: 100%;
                     margin-bottom: 20px;
-                    img {
-                        width: 100%;
+                    a {
+                        outline: none !important;
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -556,8 +574,11 @@ header {
     header {
         background-image: url("../images/header_banner_all.jpg");
         background-size: cover;
+        // position: relative;
         .header-top {
             margin-bottom: -10px;
+            // position: fixed;
+            margin-left: -15px;
             .header-logo {
                 width: 400px;
                 img {
@@ -572,6 +593,7 @@ header {
         }
         // ===end.header-top====
         .header-title {
+            // margin-left: 50px;
             h1 {
                 font-size: 28px;
                 color: $color-2;
@@ -583,38 +605,37 @@ header {
         }
         // ===end.header-title===
         .menu-desktop {
-            background: $color-4;
-            margin-left: 120px;
-            margin-right: 120px;
-            ul {
-                // display: table;
-                // margin-left: auto;
-                // margin-right: auto;
-                // background: $color-4;
-                margin-left: 400px;
-                padding-bottom: 10px;
-                li {
-                    display: inline-block;
-                    margin-right: 10px;
-                    padding-right: 10px;
-                    padding-top: 5px;
-                    padding-bottom: 5px;
-                    margin-top: 10px;
-                    border-right: 1px solid $color-1;
-                    &:last-child {
-                        border-right: none;
-                    }
-                    &:hover {
-                        border-right: 1px solid $color-2;
+            .menu {
+                background: $color-4;
+                ul {
+                    display: table;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-bottom: 10px;
+                    margin-bottom: 0px;
+                    li {
+                        display: inline-block;
+                        margin-right: 10px;
+                        padding-right: 10px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        margin-top: 10px;
+                        border-right: 1px solid $color-1;
                         &:last-child {
                             border-right: none;
                         }
-                    }
-                    a {
-                        color: $color-1;
-                        font-weight: 700;
                         &:hover {
-                            color: $color-2;
+                            border-right: 1px solid $color-2;
+                            &:last-child {
+                                border-right: none;
+                            }
+                        }
+                        a {
+                            color: $color-1;
+                            font-weight: 700;
+                            &:hover {
+                                color: $color-2;
+                            }
                         }
                     }
                 }
@@ -623,6 +644,7 @@ header {
         .affix {
             margin-right: 0px;
             border-bottom: 3px solid $color-2;
+            background: $color-4;
             ul {
                 display: table;
                 margin-left: auto;
@@ -654,6 +676,9 @@ header {
             }
             .mainTop-owl {
                 .owl-mainTop {
+                    a {
+                        outline: none !important;
+                    }
                     .owl-nav {
                         .owl-prev {
                             width: 40px;

@@ -31,8 +31,8 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-6">
-                    <div class="header-top">
+                <div class="col-md-5 col-lg-5">
+                    <div class="header-top" id="header-top">
                         <div class="container clearfix">
                             <div class="header-logo">
                                 <img src="images/logo.png" alt="">
@@ -59,7 +59,7 @@
                     </div>
                     <!-- end.header-top -->
                 </div>
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-7 col-lg-7">
                     <div class="header-title hidden-xs hidden-sm">
                         <h1>PARK TOWER RIVER</h1>
                         <h1>ĐỈNH CAO CUỘC SỐNG THƯỢNG LƯU</h1>
@@ -74,26 +74,26 @@
                 <div id="mySidenav" class="sidenav">
                     <ul>
                         <li>
-                            <a href="index.html">Giới thiệu</a>
+                            <a href="#mainTop">Giới thiệu</a>
                         </li>
                         <li>
-                            <a href="#">Tổng quan</a>
+                            <a href="#mainBetween-1">Tổng quan</a>
                         </li>
                         <li>
-                            <a href="#">Tiện ích</a>
+                            <a href="#mainBetween-2">Tiện ích</a>
                         </li>
                         <li>
-                            <a href="news.html">Nhà mẫu</a>
+                            <a href="#mainBetween-3">Nhà mẫu</a>
                         </li>
 
                         <li>
-                            <a href="#">Mặt bằng</a>
+                            <a href="#mainBetween-4">Mặt bằng</a>
                         </li>
                         <li>
-                            <a href="#">Vị trí</a>
+                            <a href="#mainBetween-5">Vị trí</a>
                         </li>
                         <li>
-                            <a href="#">Đăng ký</a>
+                            <a href="#header-top">Đăng ký</a>
                         </li>
                     </ul>
                 </div>
@@ -102,21 +102,25 @@
         </div>
         <!-- end.menu-mobile -->
         <div class="menu-desktop hidden-xs hidden-sm" data-spy="affix" data-offset-top="197">
-            <ul>
-                <li><a href="#">GIỚI THIỆU</a></li>
-                <li><a href="#">TỔNG QUAN</a></li>
-                <li><a href="#">TIỆN ÍCH</a></li>
-                <li><a href="#">NHÀ MẪU</a></li>
-                <li><a href="#">MẶT BẰNG</a></li>
-                <li><a href="#">VỊ TRÍ</a></li>
-                <li><a href="#">ĐĂNG KÝ</a></li>
-            </ul>
+            <div class="container">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#mainTop">GIỚI THIỆU</a></li>
+                        <li><a href="#mainBetween-1">TỔNG QUAN</a></li>
+                        <li><a href="#mainBetween-2">TIỆN ÍCH</a></li>
+                        <li><a href="#mainBetween-3">NHÀ MẪU</a></li>
+                        <li><a href="#mainBetween-4">MẶT BẰNG</a></li>
+                        <li><a href="#mainBetween-5">VỊ TRÍ</a></li>
+                        <li><a href="#header-top">ĐĂNG KÝ</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-- end.menu-desktop -->
     </header>
     <!-- end.header -->
     <div class="content">
-        <div class="mainTop">
+        <div class="mainTop" id="mainTop">
             <div class="mainTop-text">
                 <h2>GIỚI THIỆU PARK TOWER RIVER</h2>
                 <hr>
@@ -154,7 +158,7 @@
         </div>
         <!--end.mainTop-->
         <div class="mainBetween">
-            <div class="mainBetween-1">
+            <div class="mainBetween-1" id="mainBetween-1">
                 <div class="container">
                     <h2>TỔNG QUAN DỰ ÁN</h2>
                     <hr>
@@ -181,7 +185,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <!--end.col--->
                         <div class="col-md-6 col-lg-6">
                             <div class="mainBetween-1__right">
                                 <img src="images/project_img.jpg" alt="">
@@ -194,7 +197,7 @@
                 <!--end.container-->
             </div>
             <!--end.mainBetween-1-->
-            <div class="mainBetween-2">
+            <div class="mainBetween-2" id="mainBetween-2">
                 <div class="container">
                     <h3>TIỆN ÍCH NỘI KHU</h3>
                     <hr>
@@ -239,9 +242,6 @@
                                     <p>KHU VUI CHƠI</p>
                                 </div>
                             </div>
-                        </div>
-                        <!--end.row-->
-                        <div class="row">
                             <div class="col-md-4 col-lg-4 col-sm-6">
                                 <div class="mainBetween-2__link">
                                     <a data-fancybox="gallery" href="images/utilities_img_4.jpg"><img src="images/utilities_img_4.jpg" alt=""></a>
@@ -267,172 +267,164 @@
                 </div>
             </div>
             <!--end.mainBetween-2-->
-            <div class="mainBetween-3">
+            <div class="mainBetween-3" id="mainBetween-3">
                 <div class="container">
                     <h3>HÌNH ẢNH</h3>
                     <hr>
                     <div class="mainBetween-3__img">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3">
+                            <div class="col-md-3 col-lg-3 col-sm-6">
                                 <div class="images-link">
                                     <a data-fancybox="gallery" href="images/gallary_img_1.jpg"><img src="images/gallary_img_1.jpg" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-lg-3">
+                            <div class="col-md-3 col-lg-3 col-sm-6">
                                 <div class="images-link">
                                     <a data-fancybox="gallery" href="images/gallary_img_2.jpg"><img src="images/gallary_img_2.jpg" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-lg-3">
+                            <div class="col-md-3 col-lg-3 col-sm-6">
                                 <div class="images-link">
                                     <a data-fancybox="gallery" href="images/gallary_img_3.jpg"><img src="images/gallary_img_3.jpg" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-lg-3">
+                            <div class="col-md-3 col-lg-3 col-sm-6">
                                 <div class="images-link">
                                     <a data-fancybox="gallery" href="images/gallary_img_4.jpg"><img src="images/gallary_img_4.jpg" alt=""></a>
                                 </div>
                             </div>
-                        </div>
-                        <!--end.row-->
-                    </div>
-                    <!--end.mainBetween-3__img-->
-                    <div class="mainBetween-3__img">
-                        <div class="row">
-                            <div class="col-md-3 col-lg-3">
+                            <div class="col-md-3 col-lg-3 col-sm-6">
                                 <div class="images-link">
                                     <a data-fancybox="gallery" href="images/gallary_img_5.jpg"><img src="images/gallary_img_5.jpg" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-lg-3">
+                            <div class="col-md-3 col-lg-3 col-sm-6">
                                 <div class="images-link">
                                     <a data-fancybox="gallery" href="images/gallary_img_6.jpg"><img src="images/gallary_img_6.jpg" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-lg-3">
+                            <div class="col-md-3 col-lg-3 col-sm-6">
                                 <div class="images-link">
                                     <a data-fancybox="gallery" href="images/gallary_img_7.jpg"><img src="images/gallary_img_7.jpg" alt=""></a>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-lg-3">
+                            <div class="col-md-3 col-lg-3 col-sm-6">
                                 <div class="images-link">
                                     <a data-fancybox="gallery" href="images/gallary_img_8.jpg"><img src="images/gallary_img_8.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <!--end.mainBetween-3-->
+                    <div class="mainBetween-4" id="mainBetween-4">
+                        <div class="container">
+                            <h3>MẶT BẰNG TỔNG THỂ</h3>
+                            <hr>
+                            <div class="mainBetween-4__img">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="images">
+                                            <img src="images/ground_img_1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="images">
+                                            <img src="images/ground_img_2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end.container-->
+                    </div>
+                    <!--end.mainBetween-4-->
+                    <div class="mainBetween-5" id="mainBetween-5">
+                        <div class="container">
+                            <h3>VỊ TRÍ</h3>
+                            <hr>
+                            <p>Cạnh khu phố Sala, dòng sông cảnh quan, khu thể thao phức hợp. Trong khoảng cách đi bộ đến Crescent Mall. Bệnh viện, trường học, nhà hàng, ngân hàng, giải trí…trong bán kính 1km.</p>
+                            <div class="mainBetween-5__img">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+                                        <img src="images/map_img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!--end.row-->
+                            </div>
+                            <!--end.mainBetween-5__img-->
+                        </div>
+                    </div>
+                </div>
+                <!--end.mainBetween-->
+                <div class="mainBottom">
+                    <div class="container">
+                        <h2>ĐĂNG KÝ THÔNG TIN ĐỂ NHẬN ƯU ĐÃI VÀ TƯ VẤN MIỄN PHÍ</h2>
+                        <div class="mainBottom-form">
+                            <div class="row">
+                                <form action="">
+                                    <div class="col-md-6 col-lg-6">
+
+                                        <input type="text" placeholder="HỌ VÀ TÊN">
+                                        <input type="text" placeholder="EMAIL">
+
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+
+                                        <input type="text" placeholder="HỌ VÀ TÊN">
+                                        <button>ĐĂNG KÝ</button>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end.content-->
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-sm-6">
+                                <div class="footer-top__left">
+                                    <h4>ĐỊA CHỈ LIÊN HỆ</h4>
+                                    <p><i class="fa fa-map-marker"></i> 56 Vân Côi, P7, Q. Tân Bình, TP. Hồ Chí Minh.</p>
+                                    <p><i class="fa fa-phone"></i> <strong>Điện thoại:</strong> 1900.636.099</p>
+                                    <p><i class="fa fa-fax"></i> <strong>Fax:</strong> 1900.636.099</p>
+                                    <p><i class="fa fa-envelope"></i> <strong>Email:</strong> hi@haravan.com</p>
+                                </div>
+                            </div>
+                            <!--end.col-->
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="footer-top__right">
+                                    <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                                    <div class="fanpage">
+                                        <div class="fb-page" data-href="https://www.facebook.com/ConfessionsUTT/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                            <blockquote cite="https://www.facebook.com/ConfessionsUTT/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ConfessionsUTT/">UTT Confessions</a></blockquote>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!--end.row-->
                     </div>
-                    <!--end.mainBetween-3__img-->
+                    <!--end.container-->
                 </div>
-            </div>
-            <!--end.mainBetween-3-->
-            <div class="mainBetween-4">
-                <div class="container">
-                    <h3>MẶT BẰNG TỔNG THỂ</h3>
-                    <hr>
-                    <div class="mainBetween-4__img">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="images">
-                                    <img src="images/ground_img_1.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div class="images">
-                                    <img src="images/ground_img_2.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
+                <!--end.footer-top-->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p>Copy <i class="fa fa-copyright "></i> 2018 Park Tower. <a href="#">Powered by Gemisoft</a> .</p>
                     </div>
-                </div>
-                <!--end.container-->
-            </div>
-            <!--end.mainBetween-4-->
-            <div class="mainBetween-5">
-                <div class="container">
-                    <h3>VỊ TRÍ</h3>
-                    <hr>
-                    <p>Cạnh khu phố Sala, dòng sông cảnh quan, khu thể thao phức hợp. Trong khoảng cách đi bộ đến Crescent Mall. Bệnh viện, trường học, nhà hàng, ngân hàng, giải trí…trong bán kính 1km.</p>
-                    <div class="mainBetween-5__img">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
-                                <img src="images/map_img.jpg" alt="">
-                            </div>
-                        </div>
-                        <!--end.row-->
-                    </div>
-                    <!--end.mainBetween-5__img-->
-                </div>
-            </div>
-        </div>
-        <!--end.mainBetween-->
-        <div class="mainBottom">
-            <div class="container">
-                <h2>ĐĂNG KÝ THÔNG TIN ĐỂ NHẬN ƯU ĐÃI VÀ TƯ VẤN MIỄN PHÍ</h2>
-                <div class="mainBottom-form">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6">
-                            <form>
-                                <input type="text" placeholder="HỌ VÀ TÊN">
-                                <input type="text" placeholder="EMAIL">
-                            </form>
-                        </div>
-                        <div class="col-md-6 col-lg-6">
-                            <form>
-                                <input type="text" placeholder="HỌ VÀ TÊN">
-                                <button>ĐĂNG KÝ</button>
-                            </form>
+                    <div class="scrollTop">
+                        <div class="container">
+                            <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--end.content-->
-    <div class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="footer-top__left">
-                            <h4>ĐỊA CHỈ LIÊN HỆ</h4>
-                            <p><i class="fa fa-map-marker"></i> 56 Vân Côi, P7, Q. Tân Bình, TP. Hồ Chí Minh.</p>
-                            <p><i class="fa fa-phone"></i> <strong>Điện thoại:</strong> 1900.636.099</p>
-                            <p><i class="fa fa-fax"></i> <strong>Fax:</strong> 1900.636.099</p>
-                            <p><i class="fa fa-envelope"></i> <strong>Email:</strong> hi@haravan.com</p>
-                        </div>
-                    </div>
-                    <!--end.col-->
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer-top__right">
-                            <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
-                            <div class="fanpage">
-                                <div class="fb-page" data-href="https://www.facebook.com/ConfessionsUTT/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                                    <blockquote cite="https://www.facebook.com/ConfessionsUTT/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ConfessionsUTT/">UTT Confessions</a></blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--end.row-->
-            </div>
-            <!--end.container-->
-        </div>
-        <!--end.footer-top-->
-        <div class="footer-bottom">
-            <div class="container">
-                <p>Copy <i class="fa fa-copyright "></i> 2018 Park Tower. <a href="#">Powered by Haravan</a> .</p>
-            </div>
-            <div class="scrollTop">
-                <div class="container">
-                    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--end.footer-->
+            <!--end.footer-->
 </body>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

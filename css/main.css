@@ -6,15 +6,22 @@ li {
   list-style-type: none;
 }
 
+@font-face {
+  font-family: Narziss;
+  src: url("../font/VNF-Narziss_Regular.ttf");
+}
+
 h1,
 h2,
 h3,
 h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: Narziss;
+  font-weight: 700;
 }
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 a:hover, a:focus {
@@ -51,7 +58,7 @@ header .header-top .header-logo img {
 
 header .header-top .header-form p {
   font-size: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: Narziss;
   font-weight: 700;
   text-align: center;
   padding-top: 20px;
@@ -283,7 +290,11 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
   margin-left: 10px;
 }
 
-.content .mainTop .mainTop-owl .owl-mainTop .item img {
+.content .mainTop .mainTop-owl .owl-mainTop .item a {
+  outline: none !important;
+}
+
+.content .mainTop .mainTop-owl .owl-mainTop .item a img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -293,6 +304,7 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .content .mainBetween .mainBetween-1 {
@@ -345,7 +357,7 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
 }
 
 .content .mainBetween .mainBetween-2 h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: Narziss;
   text-align: center;
 }
 
@@ -355,6 +367,7 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
 
 .content .mainBetween .mainBetween-2 p {
   font-weight: 700;
+  text-align: center;
 }
 
 .content .mainBetween .mainBetween-2 ul {
@@ -368,13 +381,17 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
 }
 
 .content .mainBetween .mainBetween-2 .mainBetween-2__img .mainBetween-2__link {
-  height: 200px;
-  margin-bottom: 50px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-.content .mainBetween .mainBetween-2 .mainBetween-2__img .mainBetween-2__link img {
-  height: 100%;
-  width: auto;
+.content .mainBetween .mainBetween-2 .mainBetween-2__img .mainBetween-2__link a {
+  outline: none !important;
+}
+
+.content .mainBetween .mainBetween-2 .mainBetween-2__img .mainBetween-2__link a img {
+  width: 100%;
+  height: auto;
 }
 
 .content .mainBetween .mainBetween-2 .mainBetween-2__img .mainBetween-2__link p {
@@ -402,7 +419,11 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
 }
 
-.content .mainBetween .mainBetween-3 .mainBetween-3__img .images-link img {
+.content .mainBetween .mainBetween-3 .mainBetween-3__img .images-link a {
+  outline: none !important;
+}
+
+.content .mainBetween .mainBetween-3 .mainBetween-3__img .images-link a img {
   width: 100%;
 }
 
@@ -587,6 +608,7 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
   }
   header .header-top {
     margin-bottom: -10px;
+    margin-left: -15px;
   }
   header .header-top .header-logo {
     width: 400px;
@@ -606,16 +628,17 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
   header .header-title h1:last-child {
     padding-left: 40px;
   }
-  header .menu-desktop {
+  header .menu-desktop .menu {
     background: #FFFFFF;
-    margin-left: 120px;
-    margin-right: 120px;
   }
-  header .menu-desktop ul {
-    margin-left: 400px;
+  header .menu-desktop .menu ul {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 10px;
+    margin-bottom: 0px;
   }
-  header .menu-desktop ul li {
+  header .menu-desktop .menu ul li {
     display: inline-block;
     margin-right: 10px;
     padding-right: 10px;
@@ -624,25 +647,26 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
     margin-top: 10px;
     border-right: 1px solid #111111;
   }
-  header .menu-desktop ul li:last-child {
+  header .menu-desktop .menu ul li:last-child {
     border-right: none;
   }
-  header .menu-desktop ul li:hover {
+  header .menu-desktop .menu ul li:hover {
     border-right: 1px solid #b27b02;
   }
-  header .menu-desktop ul li:hover:last-child {
+  header .menu-desktop .menu ul li:hover:last-child {
     border-right: none;
   }
-  header .menu-desktop ul li a {
+  header .menu-desktop .menu ul li a {
     color: #111111;
     font-weight: 700;
   }
-  header .menu-desktop ul li a:hover {
+  header .menu-desktop .menu ul li a:hover {
     color: #b27b02;
   }
   header .affix {
     margin-right: 0px;
     border-bottom: 3px solid #b27b02;
+    background: #FFFFFF;
   }
   header .affix ul {
     display: table;
@@ -662,12 +686,15 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
   }
   .content .mainTop .mainTop-text h2 {
     font-size: 24px;
-    font-family: 'Playfair Display', serif;
+    font-family: Narziss;
   }
   .content .mainTop .mainTop-text p {
     text-align: center;
     margin-right: 20px;
     margin-left: 20px;
+  }
+  .content .mainTop .mainTop-owl .owl-mainTop a {
+    outline: none !important;
   }
   .content .mainTop .mainTop-owl .owl-mainTop .owl-nav .owl-prev {
     width: 40px;
@@ -755,7 +782,7 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
     margin-bottom: 40px;
   }
   .content .mainBetween .mainBetween-5 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: Narziss;
     font-size: 24px;
   }
   .content .mainBottom {
