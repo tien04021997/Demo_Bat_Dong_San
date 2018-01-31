@@ -422,11 +422,14 @@ header {
             }
             .mainBetween-4__img {
                 .images {
+                    display: table;
+                    margin-left: auto;
+                    margin-right: auto;
                     width: 100%;
                     margin-top: 10px;
                     margin-bottom: 10px;
                     img {
-                        width: 100%;
+                        width: 96%;
                     }
                 }
             }
@@ -565,7 +568,22 @@ header {
 
 //====renponsive===
 ///* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .content {
+        .mainBetween-4 {
+            .mainBetween-4__img {
+                .images {
+                    width: 96%;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /* Medium Devices, Desktops */
