@@ -536,6 +536,7 @@ header .menu-mobile .sidenav::-webkit-scrollbar-thumb {
 
 .footer .footer-top .footer-top__right {
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .footer .footer-bottom {
